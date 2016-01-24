@@ -2,6 +2,7 @@
     "name": "mrf/synchro",
     "type": "typo3-flow-package",
     "description": "Gives a command to synchronize database and resources with remote instances. Useful for fast update of the project on development context, when working on multiple instances (e.g. live, beta, local).",
+    "license": "MIT",
     "require": {
         "typo3/flow": "*",
         "typo3/surf": "0.9.*"
