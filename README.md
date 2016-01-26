@@ -17,17 +17,25 @@ Install via composer:
 Usage
 ===========
 
-To download database and resources from remote repository, just run the ``synchro:pull`` command with appropriate instance name as argument. Instance name have to be exactly the same as name for the TYPO3.Surf package, e.g.:
+To download database and resources from the remote instance, just run the ``synchro:pull`` command with appropriate instance name as an argument. Instance name has to be exactly the same as the name for the TYPO3.Surf package, e.g.:
 
 ``./flow synchro:pull Production``
 
-If you would like just check what commands will be executed, you can simply run the simulation by ``synchro:simulate`` command, e.g.:
+To push database and resources to the remote instance, jus run the ``synchro:push`` command with target instance name as an argument. Same as in pull command, instance name has to be exactly the same as the name for the TYPO3.Surf package, e.g.:
 
-``./flow synchro:simulate Production``
+``./flow synchro:push Production``
 
-Depending on your configuration, it may be needed to execute your Flow commands in command line using FLOW_CONTEXT environment variable, e.g.:
+If you would like just check what commands will be executed, you can simply run the simulation by ``synchro:simulatePull`` or ``synchro:simulatePush`` commands, e.g.:
+
+``./flow synchro:simulatePull Production``
+
+``./flow synchro:simulatePush Production``
+
+Depending on your configuration, it may be needed to execute your Flow commands in the command line using FLOW_CONTEXT environment variable, e.g.:
 
 ``FLOW_CONTEXT=Development/Local ./flow synchro:pull Production``
+
+``FLOW_CONTEXT=Development/Local ./flow synchro:push Production``
 
 License
 =======
@@ -44,8 +52,6 @@ Todo
 =======
 
 * Make it possible to work without TYPO3.Surf package (own ssh configuration will be needed)
-
-* Implement push functionality
 
 * Implement rollback functionality
 
