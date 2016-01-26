@@ -1,7 +1,7 @@
 {
     "name": "mrf/synchro",
     "type": "typo3-flow-package",
-    "description": "Gives a command to synchronize database and resources with remote instances. Useful for fast update of the project on development context, when working on multiple instances (e.g. live, beta, local).",
+    "description": "Flow (Neos) package, which gives a command to synchronize database and resources with remote instances in both directions (push and pull). Useful for fast update of the project on development context or fast upload of the changes remotely, when working on multiple instances (e.g. live, beta, local).",
     "license": "MIT",
     "require": {
         "typo3/flow": "*",
